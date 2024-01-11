@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-routing",
+            "outputPath": "docs/",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -36,6 +36,7 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "/angular-router/",
               "budgets": [
                 {
                   "type": "initial",
@@ -51,6 +52,7 @@
               "outputHashing": "all"
             },
             "development": {
+              "baseHref": "/angular-router/",
               "buildOptimizer": false,
               "optimization": false,
               "vendorChunk": true,
